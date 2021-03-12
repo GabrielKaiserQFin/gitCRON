@@ -9,7 +9,7 @@ library(httr)
 # Source R script from Github
 script <-
   GET(
-    url = paste0("https://api.github.com/repos/", github-actions, "/fincap/src/fcts-old.R"_github-actions),
+    url = paste0("https://api.github.com/repos/", github-actions, "/fincap/src/fcts-old.R"),
     authenticate(github-actions, secrets.GITHUB_TOKEN),     # Instead of PAT, could use password
     accept("application/vnd.github.v3.raw")
   ) %>%
