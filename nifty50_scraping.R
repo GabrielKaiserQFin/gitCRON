@@ -3,7 +3,6 @@
 library(tidyverse)
 library(rvest)
 library(janitor)
-
 library(httr)
 
 # Source R script from Github
