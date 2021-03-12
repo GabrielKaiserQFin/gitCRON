@@ -4,7 +4,7 @@ name: nifty50scrape
 on:
   #schedule: 
   #  - cron:  '0 13 * * *'
-  push:
+  push: 
       branches: main
 
 jobs: 
