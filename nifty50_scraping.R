@@ -5,17 +5,17 @@ library(rvest)
 library(janitor)
 library(httr)
 
-# Source R script from Github
-script <-
-  GET(
-    url = paste0("https://api.github.com/repos/", github-actions, "/fincap/src/fcts-old.R"),
-    authenticate(github-actions, secrets.GITHUB_TOKEN),     # Instead of PAT, could use password
-    accept("application/vnd.github.v3.raw")
-  ) %>%
-  content(as = "text")
-
-# Evaluate and parse to global environment
-eval(parse(text = script))
+# # Source R script from Github
+# script <-
+#   GET(
+#     url = paste0("https://api.github.com/repos/", github-actions, "/fincap/src/fcts-old.R"),
+#     authenticate(github-actions, secrets.GITHUB_TOKEN),     # Instead of PAT, could use password
+#     accept("application/vnd.github.v3.raw")
+#   ) %>%
+#   content(as = "text")
+# 
+# # Evaluate and parse to global environment
+# eval(parse(text = script))
 
 
 #nse top gainers
